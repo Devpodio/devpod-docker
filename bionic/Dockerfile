@@ -35,7 +35,7 @@ ENV HOME /home/nodeuser
 RUN echo "PS1='\[\e]0;\u \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] \[\033[01;34m\]\w \$ \[\033[00m\]'" >> ~/.bashrc
 
 ENV NVM_DIR $HOME/.nvm
-ENV NODE_VERSION 10.12.0
+ENV NODE_VERSION 10.13.0
 RUN mkdir -p $NVM_DIR
 RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 RUN /bin/bash -l -c "\
